@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast | Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app">
+        <header class="header">
+            <div class="logo">☀️ SkyCast</div>
+            <p>Your weather, your world.</p>
+        </header>
+
+        <form class="search-box" id="searchForm">
+            <input type="text" id="cityInput" placeholder="Enter a city..." aria-label="City name" required>
+            <button type="submit" id="searchBtn">Search</button>
+        </form>
+
+        <p id="message" role="status" aria-live="polite"></p>
+
+        <section class="weather-card" aria-label="Current weather">
+            <p class="eyebrow">CURRENT WEATHER</p>
+            <h2 id="cityName">Search for a city</h2>
+            <div class="weather-icon" id="weatherIcon">🌤️</div>
+            <h1 id="temperature">--°C</h1>
+            <p id="description">Your local weather will appear here</p>
+
+            <div class="details">
+                <div class="detail-box">
+                    <span>💧</span>
+                    <p>Humidity</p>
+                    <h3 id="humidity">--%</h3>
+                </div>
+                <div class="detail-box">
+                    <span>💨</span>
+                    <p>Wind speed</p>
+                    <h3 id="windSpeed">-- km/h</h3>
+                </div>
+            </div>
+            <p class="footer">Weather data by Open-Meteo</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
